@@ -15,9 +15,10 @@ ENV/
 *.log
 *.pot
 *.pyc
-*.sqlite3
-db.sqlite3
-media/
+# Aşağıdakileri versiyona dahil edeceğiz
+#!*.sqlite3
+#!db.sqlite3
+#!media/
 staticfiles/
 
 # IDE/Tools

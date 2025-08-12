@@ -1,0 +1,1217 @@
+[
+{
+  "model": "vlogs.category",
+  "pk": 1,
+  "fields": {
+    "name": "Teknoloji",
+    "slug": "teknoloji"
+  }
+},
+{
+  "model": "vlogs.category",
+  "pk": 2,
+  "fields": {
+    "name": "Gezi",
+    "slug": "gezi"
+  }
+},
+{
+  "model": "vlogs.category",
+  "pk": 3,
+  "fields": {
+    "name": "Oyun",
+    "slug": "oyun"
+  }
+},
+{
+  "model": "vlogs.vlog",
+  "pk": 1,
+  "fields": {
+    "author": 1,
+    "title": "Linux Terminal İpuçları",
+    "slug": "linux-terminal-ipuclar",
+    "description": "Günlük geliştirici akışında işinizi hızlandıracak pratik terminal ipuçları.",
+    "video_url": "https://www.youtube.com/watch?v=8mAITcNt710",
+    "thumbnail": "thumbnails/thumb_linux-terminal-ipuclar.jpg",
+    "category": 1,
+    "is_published": true,
+    "created_at": "2025-08-12T20:32:10.117Z",
+    "updated_at": "2025-08-12T20:45:22.124Z"
+  }
+},
+{
+  "model": "vlogs.vlog",
+  "pk": 2,
+  "fields": {
+    "author": 1,
+    "title": "İstanbul Gezi Vlogu",
+    "slug": "istanbul-gezi-vlogu",
+    "description": "Galatadan Kadıköy’e harika bir gün. En sevdiğim kahveciler ve manzaralar.",
+    "video_url": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+    "thumbnail": "thumbnails/thumb_istanbul-gezi-vlogu.jpg",
+    "category": 2,
+    "is_published": true,
+    "created_at": "2025-08-12T20:32:10.127Z",
+    "updated_at": "2025-08-12T20:45:21.887Z"
+  }
+},
+{
+  "model": "vlogs.vlog",
+  "pk": 3,
+  "fields": {
+    "author": 1,
+    "title": "Indie Oyun İncelemeleri #1",
+    "slug": "indie-oyun-incelemeleri-1",
+    "description": "Bu bölümde üç bağımsız oyunu kısa kısa inceliyoruz.",
+    "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "thumbnail": "thumbnails/thumb_indie-oyun-incelemeleri-1.jpg",
+    "category": 3,
+    "is_published": true,
+    "created_at": "2025-08-12T20:32:10.137Z",
+    "updated_at": "2025-08-12T20:45:21.217Z"
+  }
+},
+{
+  "model": "vlogs.vlog",
+  "pk": 4,
+  "fields": {
+    "author": 1,
+    "title": "Python ile Hızlı API Geliştirme",
+    "slug": "python-ile-hzl-api-gelistirme",
+    "description": "Django ve DRF ile üretime hazır bir API taslağı oluşturma.",
+    "video_url": "https://www.youtube.com/watch?v=VW7KcZk0KPY",
+    "thumbnail": "thumbnails/thumb_python-ile-hzl-api-gelistirme.jpg",
+    "category": 1,
+    "is_published": true,
+    "created_at": "2025-08-12T20:32:10.146Z",
+    "updated_at": "2025-08-12T20:45:20.963Z"
+  }
+},
+{
+  "model": "vlogs.vlog",
+  "pk": 5,
+  "fields": {
+    "author": 1,
+    "title": "Karadeniz Yol Günlüğü",
+    "slug": "karadeniz-yol-gunlugu",
+    "description": "Rota, konaklama ve bütçe ipuçlarıyla mini bir yol günlüğü.",
+    "video_url": "https://www.youtube.com/watch?v=9bZkp7q19f0",
+    "thumbnail": "thumbnails/thumb_karadeniz-yol-gunlugu.jpg",
+    "category": 2,
+    "is_published": true,
+    "created_at": "2025-08-12T20:32:10.156Z",
+    "updated_at": "2025-08-12T20:45:19.736Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 1,
+  "fields": {
+    "vlog": 1,
+    "name": "Ayşe",
+    "content": "Gerçekten harika bir anlatım, emeğinize sağlık!",
+    "is_approved": true,
+    "created_at": "2025-08-12T20:53:52.565Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 2,
+  "fields": {
+    "vlog": 1,
+    "name": "Mehmet",
+    "content": "Tertemiz bir içerik, çok faydalandım.",
+    "is_approved": true,
+    "created_at": "2025-08-12T20:53:52.574Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 3,
+  "fields": {
+    "vlog": 1,
+    "name": "Zeynep",
+    "content": "Tasarım da içerik de çok iyi, tebrikler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T20:53:52.583Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 4,
+  "fields": {
+    "vlog": 4,
+    "name": "Zeynep",
+    "content": "Harika anlatım, elinize sağlık!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.324Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 5,
+  "fields": {
+    "vlog": 2,
+    "name": "Sena",
+    "content": "Bu konu tam da ihtiyacım olandı!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.333Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 6,
+  "fields": {
+    "vlog": 2,
+    "name": "Naz",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.343Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 7,
+  "fields": {
+    "vlog": 5,
+    "name": "Berk",
+    "content": "Anlatım hızı ve örnekler çok yerinde.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.353Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 8,
+  "fields": {
+    "vlog": 3,
+    "name": "Deniz",
+    "content": "Harika anlatım, elinize sağlık!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.362Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 9,
+  "fields": {
+    "vlog": 4,
+    "name": "Sena",
+    "content": "Devamını dört gözle bekliyorum.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.372Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 10,
+  "fields": {
+    "vlog": 2,
+    "name": "Naz",
+    "content": "Gerçekten çok faydalı bir içerik olmuş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.381Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 11,
+  "fields": {
+    "vlog": 5,
+    "name": "Ahmet",
+    "content": "Bu konu tam da ihtiyacım olandı!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.395Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 12,
+  "fields": {
+    "vlog": 5,
+    "name": "Ahmet",
+    "content": "Devamını dört gözle bekliyorum.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.404Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 13,
+  "fields": {
+    "vlog": 3,
+    "name": "Ece",
+    "content": "Bu konu tam da ihtiyacım olandı!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.414Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 14,
+  "fields": {
+    "vlog": 2,
+    "name": "Duru",
+    "content": "Harika anlatım, elinize sağlık!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.423Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 15,
+  "fields": {
+    "vlog": 1,
+    "name": "Berk",
+    "content": "Müthiş ya, tebrikler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.433Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 16,
+  "fields": {
+    "vlog": 5,
+    "name": "Can",
+    "content": "Müthiş ya, tebrikler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.443Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 17,
+  "fields": {
+    "vlog": 5,
+    "name": "Mehmet",
+    "content": "Bu konu tam da ihtiyacım olandı!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.452Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 18,
+  "fields": {
+    "vlog": 4,
+    "name": "Fatma",
+    "content": "Harika anlatım, elinize sağlık!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.462Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 19,
+  "fields": {
+    "vlog": 3,
+    "name": "Nil",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.471Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 20,
+  "fields": {
+    "vlog": 5,
+    "name": "Mehmet",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.481Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 21,
+  "fields": {
+    "vlog": 3,
+    "name": "Elif",
+    "content": "Favorilere eklendi 👍",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.490Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 22,
+  "fields": {
+    "vlog": 4,
+    "name": "Berk",
+    "content": "Gerçekten çok faydalı bir içerik olmuş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.502Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 23,
+  "fields": {
+    "vlog": 2,
+    "name": "Emre",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.512Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 24,
+  "fields": {
+    "vlog": 5,
+    "name": "Mert",
+    "content": "Devamını dört gözle bekliyorum.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.521Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 25,
+  "fields": {
+    "vlog": 3,
+    "name": "Naz",
+    "content": "Devamını dört gözle bekliyorum.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.531Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 26,
+  "fields": {
+    "vlog": 2,
+    "name": "Ahmet",
+    "content": "Favorilere eklendi 👍",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.540Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 27,
+  "fields": {
+    "vlog": 1,
+    "name": "Mehmet",
+    "content": "Bu konu tam da ihtiyacım olandı!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.559Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 28,
+  "fields": {
+    "vlog": 2,
+    "name": "Fatma",
+    "content": "Devamını dört gözle bekliyorum.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.569Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 29,
+  "fields": {
+    "vlog": 2,
+    "name": "Can",
+    "content": "Müthiş ya, tebrikler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.579Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 30,
+  "fields": {
+    "vlog": 5,
+    "name": "Ahmet",
+    "content": "Gerçekten çok faydalı bir içerik olmuş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.589Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 31,
+  "fields": {
+    "vlog": 4,
+    "name": "Mert",
+    "content": "Devamını dört gözle bekliyorum.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.598Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 32,
+  "fields": {
+    "vlog": 1,
+    "name": "Ece",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.608Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 33,
+  "fields": {
+    "vlog": 3,
+    "name": "Berk",
+    "content": "Harika anlatım, elinize sağlık!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.617Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 34,
+  "fields": {
+    "vlog": 4,
+    "name": "Baran",
+    "content": "Gerçekten çok faydalı bir içerik olmuş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.627Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 35,
+  "fields": {
+    "vlog": 4,
+    "name": "Mehmet",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.636Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 36,
+  "fields": {
+    "vlog": 4,
+    "name": "Zeynep",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.647Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 37,
+  "fields": {
+    "vlog": 4,
+    "name": "Mert",
+    "content": "Bu konu tam da ihtiyacım olandı!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.658Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 38,
+  "fields": {
+    "vlog": 5,
+    "name": "Baran",
+    "content": "Harika anlatım, elinize sağlık!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.667Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 39,
+  "fields": {
+    "vlog": 3,
+    "name": "Deniz",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.677Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 40,
+  "fields": {
+    "vlog": 5,
+    "name": "Ayşe",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.686Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 41,
+  "fields": {
+    "vlog": 2,
+    "name": "Elif",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.696Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 42,
+  "fields": {
+    "vlog": 5,
+    "name": "Naz",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.714Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 43,
+  "fields": {
+    "vlog": 5,
+    "name": "Duru",
+    "content": "Bu konu tam da ihtiyacım olandı!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.723Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 44,
+  "fields": {
+    "vlog": 2,
+    "name": "Zeynep",
+    "content": "Yeni şeyler öğrendim, teşekkürler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.733Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 45,
+  "fields": {
+    "vlog": 1,
+    "name": "Mert",
+    "content": "Devamını dört gözle bekliyorum.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.742Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 46,
+  "fields": {
+    "vlog": 2,
+    "name": "Kerem",
+    "content": "Bu konu tam da ihtiyacım olandı!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.752Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 47,
+  "fields": {
+    "vlog": 3,
+    "name": "Duru",
+    "content": "Tasarım ve anlatım çok iyi dengelenmiş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.762Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 48,
+  "fields": {
+    "vlog": 3,
+    "name": "Nil",
+    "content": "Anlatım hızı ve örnekler çok yerinde.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.772Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 49,
+  "fields": {
+    "vlog": 2,
+    "name": "Duru",
+    "content": "Gerçekten çok faydalı bir içerik olmuş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.782Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 50,
+  "fields": {
+    "vlog": 1,
+    "name": "Elif",
+    "content": "Harika anlatım, elinize sağlık!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.791Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 51,
+  "fields": {
+    "vlog": 2,
+    "name": "Nil",
+    "content": "Anlatım hızı ve örnekler çok yerinde.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.801Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 52,
+  "fields": {
+    "vlog": 5,
+    "name": "Mert",
+    "content": "Tasarım ve anlatım çok iyi dengelenmiş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.810Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 53,
+  "fields": {
+    "vlog": 2,
+    "name": "Baran",
+    "content": "Gerçekten çok faydalı bir içerik olmuş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.823Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 54,
+  "fields": {
+    "vlog": 1,
+    "name": "Fatma",
+    "content": "Gerçekten çok faydalı bir içerik olmuş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.838Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 55,
+  "fields": {
+    "vlog": 4,
+    "name": "Ece",
+    "content": "Bu konu tam da ihtiyacım olandı!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.847Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 56,
+  "fields": {
+    "vlog": 2,
+    "name": "Zeynep",
+    "content": "Gerçekten çok faydalı bir içerik olmuş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.857Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 57,
+  "fields": {
+    "vlog": 3,
+    "name": "Emre",
+    "content": "Anlatım hızı ve örnekler çok yerinde.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.866Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 58,
+  "fields": {
+    "vlog": 3,
+    "name": "Nil",
+    "content": "Favorilere eklendi 👍",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.876Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 59,
+  "fields": {
+    "vlog": 1,
+    "name": "Zeynep",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.885Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 60,
+  "fields": {
+    "vlog": 1,
+    "name": "Elif",
+    "content": "Tasarım ve anlatım çok iyi dengelenmiş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.895Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 61,
+  "fields": {
+    "vlog": 5,
+    "name": "Fatma",
+    "content": "Devamını dört gözle bekliyorum.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.905Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 62,
+  "fields": {
+    "vlog": 4,
+    "name": "Nil",
+    "content": "Harika anlatım, elinize sağlık!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.914Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 63,
+  "fields": {
+    "vlog": 4,
+    "name": "Ahmet",
+    "content": "Devamını dört gözle bekliyorum.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.927Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 64,
+  "fields": {
+    "vlog": 4,
+    "name": "Zeynep",
+    "content": "Yeni şeyler öğrendim, teşekkürler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.940Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 65,
+  "fields": {
+    "vlog": 1,
+    "name": "Berk",
+    "content": "Harika anlatım, elinize sağlık!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.951Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 66,
+  "fields": {
+    "vlog": 2,
+    "name": "Zeynep",
+    "content": "Bu konu tam da ihtiyacım olandı!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.961Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 67,
+  "fields": {
+    "vlog": 1,
+    "name": "Ece",
+    "content": "Yeni şeyler öğrendim, teşekkürler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.970Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 68,
+  "fields": {
+    "vlog": 5,
+    "name": "Alp",
+    "content": "Anlatım hızı ve örnekler çok yerinde.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.980Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 69,
+  "fields": {
+    "vlog": 3,
+    "name": "Naz",
+    "content": "Harika anlatım, elinize sağlık!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.989Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 70,
+  "fields": {
+    "vlog": 2,
+    "name": "Fatma",
+    "content": "Müthiş ya, tebrikler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:43.999Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 71,
+  "fields": {
+    "vlog": 4,
+    "name": "Deniz",
+    "content": "Müthiş ya, tebrikler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.008Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 72,
+  "fields": {
+    "vlog": 2,
+    "name": "Mehmet",
+    "content": "Devamını dört gözle bekliyorum.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.020Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 73,
+  "fields": {
+    "vlog": 1,
+    "name": "Ahmet",
+    "content": "Harika anlatım, elinize sağlık!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.030Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 74,
+  "fields": {
+    "vlog": 1,
+    "name": "Ahmet",
+    "content": "Tasarım ve anlatım çok iyi dengelenmiş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.040Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 75,
+  "fields": {
+    "vlog": 1,
+    "name": "Selin",
+    "content": "Müthiş ya, tebrikler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.050Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 76,
+  "fields": {
+    "vlog": 4,
+    "name": "Can",
+    "content": "Anlatım hızı ve örnekler çok yerinde.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.059Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 77,
+  "fields": {
+    "vlog": 5,
+    "name": "Ayşe",
+    "content": "Devamını dört gözle bekliyorum.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.069Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 78,
+  "fields": {
+    "vlog": 4,
+    "name": "Ece",
+    "content": "Bu konu tam da ihtiyacım olandı!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.078Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 79,
+  "fields": {
+    "vlog": 5,
+    "name": "Can",
+    "content": "Devamını dört gözle bekliyorum.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.088Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 80,
+  "fields": {
+    "vlog": 4,
+    "name": "Kerem",
+    "content": "Anlatım hızı ve örnekler çok yerinde.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.097Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 81,
+  "fields": {
+    "vlog": 1,
+    "name": "Emre",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.107Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 82,
+  "fields": {
+    "vlog": 2,
+    "name": "Baran",
+    "content": "Tasarım ve anlatım çok iyi dengelenmiş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.116Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 83,
+  "fields": {
+    "vlog": 2,
+    "name": "Zeynep",
+    "content": "Gerçekten çok faydalı bir içerik olmuş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.126Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 84,
+  "fields": {
+    "vlog": 1,
+    "name": "Kerem",
+    "content": "Müthiş ya, tebrikler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.136Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 85,
+  "fields": {
+    "vlog": 3,
+    "name": "Zeynep",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.146Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 86,
+  "fields": {
+    "vlog": 5,
+    "name": "Berk",
+    "content": "Müthiş ya, tebrikler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.156Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 87,
+  "fields": {
+    "vlog": 3,
+    "name": "Selin",
+    "content": "Devamını dört gözle bekliyorum.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.166Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 88,
+  "fields": {
+    "vlog": 5,
+    "name": "Deniz",
+    "content": "Müthiş ya, tebrikler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.179Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 89,
+  "fields": {
+    "vlog": 5,
+    "name": "Naz",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.188Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 90,
+  "fields": {
+    "vlog": 1,
+    "name": "Baran",
+    "content": "Tasarım ve anlatım çok iyi dengelenmiş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.198Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 91,
+  "fields": {
+    "vlog": 4,
+    "name": "Baran",
+    "content": "Gerçekten çok faydalı bir içerik olmuş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.208Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 92,
+  "fields": {
+    "vlog": 4,
+    "name": "Alp",
+    "content": "Müthiş ya, tebrikler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.217Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 93,
+  "fields": {
+    "vlog": 1,
+    "name": "Ayşe",
+    "content": "Favorilere eklendi 👍",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.227Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 94,
+  "fields": {
+    "vlog": 3,
+    "name": "Deniz",
+    "content": "Gerçekten çok faydalı bir içerik olmuş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.236Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 95,
+  "fields": {
+    "vlog": 4,
+    "name": "Deniz",
+    "content": "Kaliteli içerik, emeğin karşılığı bu.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.246Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 96,
+  "fields": {
+    "vlog": 3,
+    "name": "Ece",
+    "content": "Devamını dört gözle bekliyorum.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.255Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 97,
+  "fields": {
+    "vlog": 5,
+    "name": "Ahmet",
+    "content": "Tasarım ve anlatım çok iyi dengelenmiş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.265Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 98,
+  "fields": {
+    "vlog": 4,
+    "name": "Emre",
+    "content": "Müthiş ya, tebrikler!",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.274Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 99,
+  "fields": {
+    "vlog": 1,
+    "name": "Ece",
+    "content": "Favorilere eklendi 👍",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.284Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 100,
+  "fields": {
+    "vlog": 3,
+    "name": "Alp",
+    "content": "Gerçekten çok faydalı bir içerik olmuş.",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:05:44.293Z"
+  }
+},
+{
+  "model": "vlogs.comment",
+  "pk": 101,
+  "fields": {
+    "vlog": 4,
+    "name": "merhaba",
+    "content": "salak",
+    "is_approved": true,
+    "created_at": "2025-08-12T21:06:23.443Z"
+  }
+}
+]
