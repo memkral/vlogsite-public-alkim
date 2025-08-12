@@ -1,0 +1,47 @@
+/* Koyu tema, cam efekti ve modern vurgu renkleri */
+:root {
+  --bg: #0b0b0b;
+  --surface: #121212;
+  --muted: #9aa0a6;
+  --border: #2a2a2a;
+  --primary: #7c5cff;
+  --primary-600: #6b46ff;
+}
+
+body { background: var(--bg); }
+
+.glass-nav {
+  background: rgba(18,18,18,.75);
+  backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.navbar-brand { letter-spacing: .4px; color: #fff; }
+.nav-link { color: #c9c9c9; }
+.nav-link:hover { color: #fff; }
+
+.btn-primary { background: var(--primary); border-color: var(--primary); }
+.btn-primary:hover { background: var(--primary-600); border-color: var(--primary-600); }
+
+.hero {
+  background: radial-gradient(1200px 400px at -10% -20%, rgba(124,92,255,.15), transparent 50%),
+              radial-gradient(800px 300px at 120% -10%, rgba(0,199,255,.12), transparent 50%),
+              var(--surface);
+  border: 1px solid var(--border);
+}
+
+.card { background: var(--surface); border: 1px solid var(--border); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,.5); border-color: #3a3a3a; }
+
+.page-link { background-color: #111; color: #ddd; border-color: var(--border); }
+.page-link:hover { background-color: #1b1b1b; color: #fff; }
+
+.footer { border-top: 1px solid var(--border); background: #0e0e0e; }
+
+.about-card { background: var(--surface); border: 1px solid var(--border); }
+.service-tile { background: linear-gradient(160deg, rgba(124,92,255,.12), rgba(0,0,0,0)); border: 1px solid var(--border); }
+
+/* Yorumlar */
+.comment-item { background: #121212; border: 1px solid var(--border); }
+.comment-form { background: #0f0f0f; border: 1px solid var(--border); }
+.text-white-80 { color: rgba(255,255,255,.8); }
+

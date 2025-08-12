@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block title %}VlogSite - Ana Sayfa{% endblock %}
+
+{% block content %}
+  <section class="hero mb-5 p-4 p-lg-5 rounded-4">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h1 class="display-6 fw-semibold mb-2">Keşfet, Öğren, Paylaş</h1>
+        <p class="text-white-50 mb-3">Teknoloji, gezi ve oyun temalarında düzenli vlog içerikleri. Koyu temalı, dikkat dağıtmayan bir deneyim.</p>
+        <form class="row g-2" method="get" action="/">
+          <div class="col-12 col-md-8">
+            <input type="text" name="q" value="{{ q }}" class="form-control form-control-lg bg-dark border-secondary text-light" placeholder="Vloglarda ara...">
+          </div>
+          <div class="col-12 col-md-4 d-grid d-md-block">
+            <button class="btn btn-primary btn-lg w-100" type="submit">Ara</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
+    <h2 id="grid" class="h4 m-0">Son Vloglar</h2>
+    <div class="d-flex flex-wrap gap-2">
+      <a class="btn btn-sm {% if not cat %}btn-light{% else %}btn-outline-light{% endif %}" href="/">Tümü</a>
+      {% for c in categories %}
+        <a class="btn btn-sm {% if cat == c.slug %}btn-light{% else %}btn-outline-light{% endif %}" href="/?cat={{ c.slug }}{% if q %}&q={{ q }}{% endif %}">{{ c.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="row g-4">
+    {% for v in vlogs %}
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card bg-dark border-secondary h-100">
+          {% if v.thumbnail %}
+            <img src="{{ v.thumbnail.url }}" class="card-img-top" alt="{{ v.title }}">
+          {% else %}
+            <div class="ratio ratio-16x9 bg-black border-bottom border-secondary">
+              <div class="d-flex align-items-center justify-content-center text-white-50">Önizleme Yok</div>
+            </div>
+          {% endif %}
+          <div class="card-body d-flex flex-column">
+            <h2 class="h5 card-title">{{ v.title }}</h2>
+            <p class="card-text text-white-50">{{ v.description|truncatechars:120 }}</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <a href="{% url 'vlogs:detail' v.slug %}" class="btn btn-outline-light btn-sm">İzle</a>
+              <small class="text-white-50">{{ v.created_at|date:'d.m.Y' }}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% empty %}
+      <div class="p-4 rounded-3 border border-secondary-subtle bg-dark">
+        <p class="text-white-50 mb-2">Sonuç bulunamadı.</p>
+        {% if q and suggestions %}
+          <div class="text-white-50">Bunu mu demek istediniz?
+            {% for s in suggestions %}
+              <a class="btn btn-sm btn-outline-light ms-1 mt-2" href="/?q={{ s|urlencode }}{% if cat %}&cat={{ cat }}{% endif %}">{{ s }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  {% if is_paginated %}
+    <nav class="mt-4" aria-label="Sayfalama">
+      <ul class="pagination pagination-sm">
+        {% if page_obj.has_previous %}
+          <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">Önceki</a></li>
+        {% endif %}
+        <li class="page-item disabled"><span class="page-link bg-dark text-white-50">Sayfa {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}</span></li>
+        {% if page_obj.has_next %}
+          <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">Sonraki</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  {% endif %}
+{% endblock %}

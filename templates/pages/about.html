@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Hakkımda - VlogSite{% endblock %}
+
+{% block content %}
+  <section class="row g-4 align-items-center">
+    <div class="col-lg-6">
+      <h1 class="display-6 fw-semibold mb-3">Merhaba, ben MemKral 👋</h1>
+      <p class="lead text-white-50">Kısa videolar ve uzun rehberlerle; web geliştirme, DevOps ve açık kaynak üzerine içerikler üretiyorum. Aşağıda son işlerden bir seçki var.</p>
+      <div class="d-flex gap-2 mt-3">
+        <a class="btn btn-primary" href="/">Vloglara göz at</a>
+        <a class="btn btn-outline-light" href="/admin/">İletişim/İçerik Yönetimi</a>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="about-card p-4 rounded-3">
+        <h2 class="h5 mb-3">Öne Çıkan Çalışmalar</h2>
+        <ul class="list-unstyled m-0">
+          <li class="mb-2">• Kurumsal ölçekte CI/CD boru hattı: GitHub Actions + Docker + Kubernetes</li>
+          <li class="mb-2">• Django + PostgreSQL ile içerik yönetim platformu</li>
+          <li class="mb-2">• Realtime bildirim altyapısı: Django Channels + Redis</li>
+          <li class="mb-2">• Modern, koyu temalı arayüz tasarımları (Bootstrap 5, SCSS)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-5">
+    <h2 class="h4 mb-3">Hizmetler</h2>
+    <div class="row g-3">
+      <div class="col-md-4"><div class="service-tile p-4 h-100 rounded-3"><h3 class="h6">Danışmanlık</h3><p class="text-white-50 m-0">Performans, güvenlik ve ölçeklenebilirlik üzerine.</p></div></div>
+      <div class="col-md-4"><div class="service-tile p-4 h-100 rounded-3"><h3 class="h6">Eğitim</h3><p class="text-white-50 m-0">Django, Docker, Git, CI/CD odaklı atölyeler.</p></div></div>
+      <div class="col-md-4"><div class="service-tile p-4 h-100 rounded-3"><h3 class="h6">Ürün Geliştirme</h3><p class="text-white-50 m-0">Fikirden canlıya modern web uygulamaları.</p></div></div>
+    </div>
+  </section>
+{% endblock %}
+
+
+
